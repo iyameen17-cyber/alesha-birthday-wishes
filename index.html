@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Every hour, for Alesha 💌</title>
+<meta name="description" content="22 birthday cards for Alesha — a new one opens every hour, from Yameen.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#1a0d3a">
+<meta property="og:title" content="22 birthday cards for Alesha 💌">
+<meta property="og:description" content="A new one opens every hour, 2 AM to 11 PM. From Yameen, with love.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%92%8C%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fredoka:wght@400;500;600;700&family=Great+Vibes&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="night">
+
+<div class="bg" aria-hidden="true"><div id="stars" class="stars"></div><div id="floaters" class="floaters"></div></div>
+
+<header class="hero">
+  <p class="eyebrow">27 October · Alesha's birthday</p>
+  <h1>Every hour,<span>a little love letter</span></h1>
+  <p class="from">22 birthday cards from <b>Yameen</b> 💗 — a new one opens every hour, from 2 AM until 11 PM.</p>
+  <div class="hero-art" id="hero-art"></div>
+  <section class="clock" aria-live="polite" aria-label="Countdown to the next card">
+    <div class="ring-wrap">
+      <svg viewBox="0 0 120 120" class="ring" aria-hidden="true"><circle cx="60" cy="60" r="54" class="ring-bg"/><circle cx="60" cy="60" r="54" class="ring-fg" id="cc-ring"/></svg>
+      <div class="cc-time" id="cc-time"><b>00</b><i>:</i><b>00</b><i>:</i><b>00</b></div>
+    </div>
+    <p class="cc-label" id="cc-label">&nbsp;</p>
+    <p class="cc-sub" id="cc-sub"></p>
+    <button type="button" class="btn btn-pink btn-lg" id="cc-open" hidden>Open card 💌</button>
+  </section>
+</header>
+
+<main class="wrap">
+  <h2 class="grid-title">Your 22 cards<small>one for every hour of your birthday</small></h2>
+  <ol class="grid" id="grid"></ol>
+  <p class="note">Each card opens on the hour, Lahore time. Come back every hour — or open them all tonight. 💗</p>
+</main>
+
+<footer class="foot">Yameen loves you · kisses, hugs &amp; cuddles · can't wait to meet you 💗</footer>
+
+<button type="button" class="music" id="music"><span aria-hidden="true">🎵</span> Play our song</button>
+
+<dialog id="viewer" class="viewer" aria-labelledby="c-title">
+  <div class="v-scroll">
+    <button type="button" class="v-close" data-close aria-label="Close the card">✕</button>
+    <article class="card" id="card"></article>
+    <nav class="v-nav" aria-label="More cards"><button type="button" class="btn btn-ghost" id="v-prev">← Previous</button><button type="button" class="btn btn-ghost" id="v-next">Next card →</button></nav>
+  </div>
+</dialog>
+
+<div id="fx" class="fx" aria-hidden="true"></div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<script src="music.js" defer></script>
+<script src="cards.js" defer></script>
+<script src="scenes.js" defer></script>
+<script src="app.js" defer></script>
+</body>
+</html>

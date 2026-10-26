@@ -1,0 +1,7 @@
+# the readable card text stays on this computer (the site uses the encoded cards.js)
+private/
+
+# misc
+.DS_Store
+Thumbs.db
+*.log
